@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/Model-Attention%20U--Net-brightgreen">
 </p>
 
----------------------------------------------------------------------------------------------------------------------------
+---
 ## 🏆 Project Highlights
 
 - 🌱 Designed a complete **data-centric semantic segmentation pipeline** instead of focusing solely on model architecture.
@@ -24,7 +24,7 @@
 - 🧠 Improved the baseline model using **Attention U-Net**.
 - ✨ Applied post-processing techniques to refine predicted masks and suppress false positives.
 - ⚖️ Benchmarked the final pipeline against a **fine-tuned DeepLabV3 + MobileNetV3** model using the same dataset.
---------------------------------------------------------------------------------------------------------------------------------
+---
 ## 🏗️ Project Pipeline
 
 ```text
@@ -71,13 +71,13 @@
                      └────────────────────────────────────────────┘
 ```
 
---------------------------------------------------------------------------------------------------------------------------------
+---
 ## 📊 Performance Visualization
 
 The final pipeline achieved substantial improvements over the baseline through a sequence of data-centric enhancements, architectural improvements, and post-processing techniques.
 
 <p align="center">
-    <img width="1590" height="785" alt="image" src="https://github.com/user-attachments/assets/9428b080-b48f-4166-a162-5b14e6da2ec0" />
+<img width="1330" height="653" alt="image" src="https://github.com/user-attachments/assets/0d4f4fd7-bed3-4bfa-8e12-7f853f7e3ceb" />
 
 </p>
 
@@ -87,7 +87,7 @@ The final pipeline achieved substantial improvements over the baseline through a
     <img width="467" height="461" alt="image" src="https://github.com/user-attachments/assets/f1fbbfd3-febb-42a4-b291-361aa989b1e9" />
 
 </p>
----------------------------------------------------------------------------------------------------------------------------------
+---
 
 
 
@@ -111,7 +111,7 @@ Fine tuning the **DeepLabV3 + MobileNetV3** model was part of this project
 The comparison highlights the effectiveness of the proposed data-centric pipeline while providing a fair reference against a widely adopted semantic segmentation architecture.
 
 
-------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## 💡 Key Takeaways
 
@@ -126,7 +126,7 @@ Throughout this project, several practical observations became clear:
 - 📌 A fair benchmark against DeepLabV3 + MobileNetV3 provided stronger validation of the proposed pipeline.
 
 
---------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## 🔮 Future Work
 
 Possible directions for extending this project include:
@@ -136,9 +136,42 @@ Possible directions for extending this project include:
 - Deploying the final model as a lightweight web or mobile application.
 - Optimizing inference speed through model quantization and pruning.
 - Integrating the segmentation model with a downstream plant disease classification pipeline.
+---
 
+## 📁 Repository Structure
 
-
+```text
+Plant-Leaf-Segmentation/
+│
+├── 📂 images/
+│   ├── Project full map.png
+│   ├── Model Performance on test split images (1).png
+│   ├── Model Performance on test split images (2).png
+│   └── Model Performance on real world images.png
+│
+├── 📂 Results & Benchmarking/
+│   ├── Original Vs Clean Dataset.jpg
+│   ├── Unet Vs Attention Unet.png
+│   ├── Benchmark Table.png
+│   └── Benchmark Graph.png
+│
+├── 📂 Notebooks/
+│   ├── 01_Unet_Error_Analysis_Corrupted_vs_Cleaned.ipynb
+│   ├── 02_Attention_UNet_and_Driven_Augmentation.ipynb
+│   ├── 03_Attention_UNet_Postprocessing.ipynb
+│   └── 04_Fine_Tuning_DeepLabV3_MobileNetV3_Benchmark.ipynb
+│
+├── 📂 Model/
+│   └── LeafSegNet_Attention.keras
+│
+├── 📂 Data Sets/
+│   ├── Original Dataset Link.txt
+│   └── My Refined Dataset.txt
+│
+├── README.md
+├── LICENSE
+└── requirements.txt
+```
 
 
 
