@@ -157,7 +157,7 @@ Plant-Leaf-Segmentation/
 ├── 📂 Model/
 │   └── LeafSegNet_Attention.keras
 │
-├── 📂 Data Sets/
+├── 📂 DataSets/
 │   ├── Original Dataset Link.txt
 │   └── My Refined Dataset.txt
 │
