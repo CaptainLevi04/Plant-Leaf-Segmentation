@@ -19,8 +19,8 @@
 - 🌱 Designed a complete **data-centric semantic segmentation pipeline** instead of focusing solely on model architecture.
 - 🔍 Performed systematic **error analysis** to identify the root causes of segmentation failures.
 - 🧹 Inspected the dataset manually and removed corrupted samples.
-- ✍️ Refined segmentation annotations using **Roboflow**.
-- 🎯 Applied **targeted data augmentation** only to challenging samples.
+- ✍️ Refined segmentation annotations Manually on **Roboflow**.
+- 🎯 Applied **targeted data augmentation** inspired by the model failures due to being low on training data.
 - 🧠 Improved the baseline model using **Attention U-Net**.
 - ✨ Applied post-processing techniques to refine predicted masks and suppress false positives.
 - ⚖️ Benchmarked the final pipeline against a **fine-tuned DeepLabV3 + MobileNetV3** model using the same dataset.
@@ -117,24 +117,17 @@ The comparison highlights the effectiveness of the proposed data-centric pipelin
 
 Throughout this project, several practical observations became clear:
 
-- 📌 Improving dataset quality had a greater impact than simply increasing model complexity.
-- 📌 Systematic error analysis revealed issues that evaluation metrics alone could not identify.
-- 📌 Manual annotation refinement significantly improved segmentation consistency.
-- 📌 Targeted data augmentation proved more effective than applying aggressive augmentation to the entire dataset.
-- 📌 Attention U-Net produced cleaner leaf boundaries than the baseline U-Net.
-- 📌 Post-processing further reduced small false-positive regions without retraining the model.
-- 📌 A fair benchmark against DeepLabV3 + MobileNetV3 provided stronger validation of the proposed pipeline.
-
+- Improving dataset quality had a greater impact than simply increasing model complexity.
+- Systematic error analysis revealed issues that evaluation metrics alone could not identify.
+- Manual annotation refinement significantly improved segmentation consistency.
+- Targeted data augmentation proved more effective than applying aggressive augmentation to the entire dataset (in this case).
+- Attention U-Net produced cleaner leaf boundaries than the baseline U-Net.
+- Post-processing further reduced small false-positive regions without retraining the model.
+- A fair benchmark against DeepLabV3 + MobileNetV3 provided stronger validation of the proposed pipeline.
 
 ---
-## 🔮 Future Work
-
-Possible directions for extending this project include:
-
-- Fine-tuning transformer-based segmentation models (e.g., SegFormer or Mask2Former).
-- Expanding the dataset with additional plant species and real-world field images.
-- Deploying the final model as a lightweight web or mobile application.
-- Optimizing inference speed through model quantization and pruning.
+## 🔮 Future Work (SOON)
+- Expanding the dataset with additional plant species and real-world field images to increase model quality and generalization on any plant leaf.
 - Integrating the segmentation model with a downstream plant disease classification pipeline.
 ---
 
@@ -169,8 +162,6 @@ Plant-Leaf-Segmentation/
 │   └── My Refined Dataset.txt
 │
 ├── README.md
-├── LICENSE
-└── requirements.txt
 ```
 
 
